@@ -1,0 +1,57 @@
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .timer-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #61dafb;
+  }
+  
+  .timer-display {
+    font-size: 4rem;
+    padding: 20px;
+    background-color: #20232a;
+    border-radius: 15px;
+    border: 3px solid #61dafb;
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .timer-controls {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+  }
+  
+  .timer-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .timer-button.start-pause {
+    background-color: #61dafb;
+    color: #20232a;
+  }
+  
+  .timer-button.start-pause:hover {
+    background-color: #4bb1f4; }
+
+    .timer-button.reset { background-color: #f44336; color: white; }
+    
+    .timer-button.reset
+    { background-color: #d7382f; }
+  
