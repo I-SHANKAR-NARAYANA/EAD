@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './PasswordStrength.css';  // Import CSS for styling
 
 const PasswordStrengthChecker = () => {
   const [password, setPassword] = useState('');
   const [strength, setStrength] = useState('');
+  useEffect(() => {
+    checkPasswordStrength(password)
+  }, [password]);
 
   const checkPasswordStrength = (pwd) => {
     let strengthLevel = 0;
@@ -41,7 +44,6 @@ const PasswordStrengthChecker = () => {
   const handlePasswordChange = (e) => {
     const newPassword = e.target.value;
     setPassword(newPassword);
-    checkPasswordStrength(newPassword);
   };
 
   return (
